@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+home
+{% endblock %}
+
+{% block content %}
+<h1>this is the home page</h1>
+<a href="{% url 'logout'%}"><button type="submit">Logout</button></a>
+<a href="{% url 'update'%}"><button type="submit">Update your details.</button></a>
+{% endblock %}
